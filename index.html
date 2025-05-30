@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Conexão Campo-Cidade</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Página Inicial</a></li>
+        <li><a href="#jogos">Jogos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#conta">Criar Conta</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section-home">
+      <div class="intro">
+        <h1>Festejando a Conexão Campo-Cidade</h1>
+        <p>Explore a união entre o campo e a cidade através de jogos e histórias interativas.</p>
+        <button onclick="window.location.href='#jogos'">Jogar Agora</button>
+      </div>
+    </section>
+
+    <section id="jogos" class="section-jogos">
+      <h2>Mini Jogos</h2>
+      <div class="game-options">
+        <button onclick="startMemoryGame()">Jogo da Memória</button>
+        <button onclick="startPuzzleGame()">Quebra-Cabeça</button>
+      </div>
+    </section>
+
+    <section id="galeria" class="section-galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery">
+        <img src="campo1.jpg" alt="Campo">
+        <img src="cidade1.jpg" alt="Cidade">
+        <img src="campo2.jpg" alt="Campo">
+        <img src="cidade2.jpg" alt="Cidade">
+      </div>
+    </section>
+
+    <section id="conta" class="section-conta">
+      <h2>Criar Conta</h2>
+      <form id="formCadastro" onsubmit="return cadastrarUsuario(event)">
+        <label for="username">Nome de Usuário</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirmar Senha</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+      <div id="mensagemCadastro"></div>
+    </section>
+
+    <section id="sobre" class="section-sobre">
+      <h2>Sobre</h2>
+      <p>Este projeto celebra a relação entre o campo e a cidade, e como ambas as realidades se complementam na cultura e no cotidiano.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Conexão Campo-Cidade. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
