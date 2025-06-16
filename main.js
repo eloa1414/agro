@@ -1,4 +1,4 @@
-ocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // Menu Responsivo (Hamburger)
     const navToggle = document.querySelector('.nav-toggle');
     const navList = document.getElementById('primary-navigation');
